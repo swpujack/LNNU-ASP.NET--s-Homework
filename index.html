@@ -1,0 +1,411 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>York Law's web</title>
+	<!--fonts-->
+		
+	<!--//fonts-->
+			<link href="css/bootstrap.css" rel="stylesheet">
+			<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+            <link rel="stylesheet" href="css/audioplayer.css" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Peak Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->	
+    <style type="text/css">
+        body{margin:0px;padding:0px;background:#fff;font-family:"Arial Black", Arial, Helvetica, sans-serif;}
+        .content{width:520px;margin:50px auto;}
+        /* fl_menu */
+        #fl_menu{position:absolute;top:50px;left:0px;z-index:9999;width:150px;height:50px;}
+        #fl_menu .label{padding-left:20px;line-height:50px;font-size:14px;font-weight:bold;background:#000;color:#fff;letter-spacing:7px;}
+        #fl_menu .menu{display:none;}
+        #fl_menu .menu .menu_item{display:block;background:#000;color:#bbb;border-top:1px solid #333;padding:10px 20px;font-size:12px;text-decoration:none;}
+        #fl_menu .menu a.menu_item:hover{background:#333;color:#fff;}
+    </style>
+
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/modernizr.custom.97074.js"></script>
+	<!-- js -->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+			    $(".scroll").click(function (event) {
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+			jQuery(document).ready(function ($) {
+			    $(".menu_item").click(function (event) {
+			        event.preventDefault();
+			        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			    });
+			});
+		</script>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript">
+        function FloatMenu() {
+            var animationSpeed = 1500;
+            var animationEasing = 'easeOutQuint';
+            var scrollAmount = $(document).scrollTop();
+            var newPosition = menuPosition + scrollAmount;
+            if ($(window).height() < $('#fl_menu').height() + $('#fl_menu .menu').height()) {
+                $('#fl_menu').css('top', menuPosition);
+            } else {
+                $('#fl_menu').stop().animate({ top: newPosition }, animationSpeed, animationEasing);
+            }
+        }
+        $(window).load(function () {
+            menuPosition = $('#fl_menu').position().top;
+            FloatMenu();
+        });
+        $(window).scroll(function () {
+            FloatMenu();
+        });
+        $(document).ready(function () {
+            var fadeSpeed = 500;
+            $("#fl_menu").hover(function () {
+                $('#fl_menu .label').fadeTo(fadeSpeed, 1);
+                $("#fl_menu .menu").fadeIn(fadeSpeed);
+            }, function () {
+                $('#fl_menu .label').fadeTo(fadeSpeed, 0.75);
+                $("#fl_menu .menu").fadeOut(fadeSpeed);
+            });
+        });
+    </script>
+
+	
+</head>
+<body >
+    <!--浮动菜单-->
+    <div id="fl_menu">
+	<div class="label">MENU</div>
+	<div class="menu">
+    	<a  href="#home" class="menu_item">Home</a>
+        <a  href="#about" class="menu_item">About me</a>
+        <a  href="#portfolio" class="menu_item">Gallary</a>
+        <a  href="#services" class="menu_item">My Love</a>
+        <a  href="#contact" class="menu_item">Contact</a>
+    </div>
+    </div>
+    
+<!-- banner -->
+<div id="home" class="banner" style="background-image:url(imagesIMG_20151106_021229-01.jpeg);background-position:center; background-repeat:repeat-y" >
+	<div class="container" >
+		<div class="banner-grids">
+			<div class="col-md-4 navigation">
+				<div class="nav-left">
+					<div class="grid__item color-4">
+						<a class="link link--kumya" href="#home"><span data-letters="YORK">YORK LAW</span></a>
+					</div>
+                    <h4 style="color:white;font-family:'Microsoft YaHei'">不想当摄影师的程序猿不是好的音乐生。</h4>
+				</div>
+				<div class="nav-right">
+						<span class="menu"><img src="images/menu.png" /></span>
+							<nav class="cl-effect-1">
+								<ul class="nav1">
+									<li><a class="scroll" href="#home">Home</a></li>
+									<li><a class="scroll" href="#about">About me</a></li>
+									<li><a class="scroll" href="#portfolio">Gallary</a></li>
+									<li><a class="scroll" href="#services">My Love</a></li>
+									<li><a class="scroll" href="#contact">Contact</a></li>
+								</ul>
+							</nav>
+							<!-- script for menu -->
+							<script>
+							    $("span.menu").click(function () {
+							        $("ul.nav1").slideToggle(300, function () {
+							            // Animation complete.
+							        });
+							    });
+							</script>
+							<!-- //script for menu -->
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-8 banner-image text-center">
+				
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+<!-- about -->
+<div id="about" class="about">
+	<div class="container">
+		<div class="about-info">
+				<h3>关于我的那些事</h3>
+				<h4>我是谁</h4>
+				<p>一个出生在广东肇庆广宁的年轻人，拥有梦想，爱好和平，喜爱音乐，热爱编程。这就是我，我是罗煜铭。</p>
+                <p>A guy borned in Guangning ZhaoQing,Guangdong province have dreams,love peace,music and coding.</p>
+                <p>This is me,my name is York Law.</p>
+		</div>
+		<div class="about-grids">
+		   	<div class="col-md-6 about-grid">
+		   		<h4>我的近况</h4>
+		   		<p>就读学校：岭南师范学院(LNNU);</br>晚餐：鸿园的鸡丝面with辣椒酱;</br>目前所在地：广东湛江.</p>
+		   	</div>
+		   	<div class="col-md-6 about-grid">
+		   		<h4>我的目标</h4>
+		   		<p>为中华民族崛起而coding！</br>For the rise of the Chinese nation to coding!</p>
+		   	</div>
+		   	<div class="clearfix"> </div>
+		</div>   
+	</div>
+</div>
+<!-- //about -->
+<!-- my skills -->
+	<div class="our-skills">
+		<div class="container">
+			<div class="skill-info">
+				<h2>我的技能</h2>
+			</div>
+			<div class="skill-grids">
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-1"></div>
+						<p>吃东西</p>
+					</div>
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-2"></div>
+						<p>音乐</p>
+					</div>
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-3"></div>
+						<p>摄影</p>
+					</div>
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-4"></div>
+						<p>编程</p>
+					</div>
+					<div class="clearfix"> </div>
+				 <script type="text/javascript" src="js/circles.js"></script>
+					         <script>
+								var colors = [
+										['#ced7df', '#3c82c0'], ['#ced7df', '#3c82c0'], ['#ced7df', '#3c82c0'], ['#ced7df', '#3c82c0']
+									];
+								for (var i = 1; i <= 5; i++) {
+									var child = document.getElementById('circles-' + i),
+										percentage = 40 + (i * 10);
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      10,
+										number:   	percentage / 10,
+										text:       '%',
+										colors:     colors[i - 1]
+									});
+								}
+						
+				</script>
+			</div>
+		</div>	
+	</div>
+<!-- //my skills -->
+<div id="portfolio" class="gallery">
+		<div class="container">
+				<script src="js/jquery.chocolat.js"></script>
+			<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+			<!--light-box-files -->
+			<script type="text/javascript" charset="utf-8">
+			$(function() {
+				$('.gallery a').Chocolat();
+			});
+			</script>
+			<h3>Gallary</h3>
+			<section>
+				<ul id="da-thumbs" class="da-thumbs">
+					<li>
+						<a href="imagesIMG_20150728_100801-01.jpeg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="imagesIMG_20150728_100801-01.jpeg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="imagesIMG_20150803_155909-01.jpeg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="imagesIMG_20150803_155909-01.jpeg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="imagesIMG_20150807_063802-01.jpeg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="imagesIMG_20150807_063802-01.jpeg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="imagesIMG_20150810_131946-01.jpeg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="imagesIMG_20150810_131946-01.jpeg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>	
+						<a href="imagesIMG_20150917_180145-01.jpeg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="imagesIMG_20150917_180145-01.jpeg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="imagesIMG_20150917_182137-01.jpeg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="imagesIMG_20150917_182137-01.jpeg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="imagesIMG_20151030_002044-01.jpeg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="imagesIMG_20151030_002044-01.jpeg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="imagesIMG_20151113_120151-01.jpeg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="imagesIMG_20151113_120151-01.jpeg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="imagesIMG_20151114_190022-01.jpeg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="imagesIMG_20151114_190022-01.jpeg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<div class="clearfix"> </div>
+				</ul>
+			</section>
+				<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+				<script type="text/javascript">
+					$(function() {
+						$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+					});
+				</script>
+        </div>	
+</div>
+<!--//gallery-->
+<!--services-->
+<div id="services" class="services">
+	<div class="container">
+		<div class="ser-head">
+			<h3>My Love</h3>
+		</div>
+		<div class="wel-grids">
+			<div id="wrapper">
+			<audio preload="auto" controls>
+				<source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+				<source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+				<source src="audio/BlueDucks_FourFlossFiveSix.wav">
+			</audio>
+			<script src="js/jquery.js"></script>
+			<script src="js/audioplayer.js"></script>
+			<script>$(function () { $('audio').audioPlayer(); });</script>
+
+			
+		</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--//services-->
+<!--news-->
+<div class="news">
+	<div class="container">
+		<h3>GET IN TOUCH WITH ME</h3>
+		
+	
+	</div>
+</div>
+<!--//news-->
+
+<!-- contact-us -->
+<div id="contact" class="contact-us">
+	<div class="container">
+		<div class="contact-grids">
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></div>
+				<p><a href="http://map.baidu.com/detail?qt=ninf&uid=4b88f6f7a934f87d3617dc58&detail=education&from=list&ugc_ver=1">广东省湛江市赤坎区寸金路29号</p>
+			</div>
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+				<p><a href="http://www.lymmm2@163.com">lymmm2@163.com</a></p>
+			</div>
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></div>
+				<p>+86 13414907041</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="contact-info">
+			<form>
+				<input type="text" placeholder="Your Name" required>
+				<input type="text" placeholder="Your E-Mail" required>
+				<input type="text" placeholder="Subject" required>
+				<textarea placeholder="Your Message" required></textarea>
+				<input type="submit" value="SEND MESSAGE">
+			</form>
+		</div>
+	</div>
+</div>
+<!-- //contact-us -->
+<!-- footer -->
+<div class="copy-right">
+	<div class="container">
+		
+	   <p style="color:white"> 岭南师范学院信息科学与技术学院网站设计课程期中作业：）</p></div>
+</div>
+<!-- footer -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>
