@@ -3,6 +3,27 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+       -o-transition: all 0.4s;
+          transition: all 0.4s;
+}
+.btn:hover {
+  color: #4eacff;
+  border-color: #4eacff;
+}
+
 body{
 	margin:0;
 	padding:0;
@@ -1053,6 +1074,7 @@ color:#76b852;
 	.about, .our-skills, div#portfolio, .services, .news, .get-in-touch, .contact-us {
 	  padding: 45px 0;
 	}
+
 	.about-info p {
 	  width: 100%;
 	}
